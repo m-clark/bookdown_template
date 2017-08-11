@@ -1,0 +1,59 @@
+---
+title: <span style="font-size:125%; font-family:Roboto; font-style:normal">Title</span>
+subtitle: <span style="font-size:125%; font-style:normal; font-variant:small-caps; font-family:'Open Sans'">Subtitle</span>
+author:  |
+  <span style="font-size:125%; font-style:normal; font-variant:small-caps; font-family:'Open Sans'">Michael Clark</span> <br>
+  <span class="" style="font-size:75%">https://m-clark.github.io</span><br><br>
+  <img src="img/signature-acronym.png" style="width:30%; padding:10px 0;"> <br>
+  <img src="img/ARC-acronym-signature.png" style="width:21%; padding:10px 0;"> 
+
+date: <span style="font-style:normal;font-family:'Open Sans'">`r Sys.Date()`</span>
+site: bookdown::bookdown_site
+output:
+  bookdown::gitbook:
+    css: [css/standard_html.css, css/book.css]
+    highlight: pygments
+    number_sections: false
+    # split_by: section
+    toc_depth: 3
+    config:
+      edit : null
+      download: null
+      search: yes
+      sharing:
+        facebook: yes
+        twitter: yes
+        google: no
+        weibo: no
+        instapper: no
+        vk: no
+        all: ['facebook', 'google', 'twitter', 'weibo', 'instapaper']
+always_allow_html: yes
+font-import: https://fonts.googleapis.com/css?family=Roboto|Open+Sans
+font-family: 'Roboto'
+documentclass: book
+# bibliography: refs.bib
+biblio-style: apalike
+link-citations: yes
+description: "A book about something"    # leaving this blank will actually screw things up in the same way as the url issue; even commenting will
+cover-image: img/nineteeneightyR.png
+url: 'https\://m-clark.github.io/'  # evidently the \: is required or you'll get text in the title/toc area
+github-repo:  m-clark/
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, message=F, warning=F, error=F, comment=NA, R.options=list(width=220),   # code 
+                      dev.args=list(bg = 'transparent'), dev='svg', fig.align='center',     # viz
+                      cache.rebuild=F, cache=T)                                                 # cache
+```
+
+```{r packages, include=FALSE, cache=FALSE}
+library(magrittr); library(tidyverse); library(stringr); library(pander); library(plotly); library(lazerhawk)
+```
+
+
+#
+
+```{r fig.align='center', echo=FALSE, include=identical(knitr:::pandoc_to(), 'html')}
+knitr::include_graphics('img/nineteeneightyR.png', dpi = NA)
+```
