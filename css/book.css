@@ -25,7 +25,7 @@
 
 
 .book .book-body .page-wrapper .page-inner section.normal a {
-    color: #3572D9;  /*1B4D9E #4183c4; changed for contrast and complement*/
+    color: #3D68FF;  /*1B4D9E #4183c4; changed for contrast and complement*/
     text-decoration: none;
     background: 0 0;
 }
@@ -71,7 +71,7 @@ i {
 
 .book .book-summary {
     position: absolute;
-    font-family: "Open Sans Condensed", Roboto, sans-serif;
+    font-family: "Open Sans", Roboto, sans-serif;
     top: 0;
     left: -300px;
     bottom: 0;
@@ -99,5 +99,5 @@ i {
     position: relative;
 }
 .book .book-summary ul.summary li a:hover, .book .book-summary ul.summary li.active>a {
-  color: #9E1B34;  /*#6197D5*/
+  color: #990024;  /*#6197D5*/
 }

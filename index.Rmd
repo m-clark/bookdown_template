@@ -11,7 +11,7 @@ date: <span style="font-style:normal;font-family:'Open Sans'">`r Sys.Date()`</sp
 site: bookdown::bookdown_site
 output:
   bookdown::gitbook:
-    css: [css/standard_html.css, css/book.css]
+    css: [css/book.css, css/standard_html.css]
     highlight: pygments
     number_sections: false
     # split_by: section
