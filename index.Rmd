@@ -4,8 +4,8 @@ subtitle: <span style="font-size:125%; font-style:normal; font-variant:small-cap
 author:  |
   <span style="font-size:125%; font-style:normal; font-variant:small-caps; font-family:'Open Sans'">Michael Clark</span> <br>
   <span class="" style="font-size:75%">https://m-clark.github.io</span><br><br>
-  <img src="img/signature-acronym.png" style="width:30%; padding:10px 0;"> <br>
-  <img src="img/ARC-acronym-signature.png" style="width:21%; padding:10px 0;"> 
+  <img src="img/CSCAR_logos/signature-acronym.png" style="width:30%; padding:10px 0;" alt="University of Michigan: CSCAR"> <br>
+  <img src="img/ARC_logos/ARC-acronym-signature.png" style="width:21%; padding:10px 0;" alt="University of Michigan: Advanced Research Computing"> 
 
 date: <span style="font-style:normal;font-family:'Open Sans'">`r Sys.Date()`</span>
 site: bookdown::bookdown_site
@@ -29,8 +29,8 @@ output:
         vk: no
         all: ['facebook', 'google', 'twitter', 'weibo', 'instapaper']
 always_allow_html: yes
-font-import: https://fonts.googleapis.com/css?family=Roboto|Open+Sans
-font-family: 'Roboto'
+# font-import: https://fonts.googleapis.com/css?family=Roboto|Open+Sans
+# font-family: 'Roboto'
 documentclass: book
 # bibliography: refs.bib
 biblio-style: apalike
@@ -44,7 +44,7 @@ github-repo:  m-clark/
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE, message=F, warning=F, error=F, comment=NA, R.options=list(width=220),   # code 
                       dev.args=list(bg = 'transparent'), dev='svg', fig.align='center',     # viz
-                      cache.rebuild=F, cache=T)                                                 # cache
+                      cache.rebuild=T, cache=T)                                                 # cache
 ```
 
 ```{r packages, include=FALSE, cache=FALSE}
@@ -54,6 +54,10 @@ library(magrittr); library(tidyverse); library(stringr); library(pander); librar
 
 #
 
-```{r fig.align='center', echo=FALSE, include=identical(knitr:::pandoc_to(), 'html')}
-knitr::include_graphics('img/nineteeneightyR.png', dpi = NA)
+```{r rimg, fig.align='center',  out.width=300, echo=FALSE, include=identical(knitr:::pandoc_to(), 'html')}
+knitr::include_graphics('img/198R.png', dpi = NA)
+```
+
+```{r ccimg, fig.align='center',  out.width=0, fig.show='hide', echo=FALSE, include=identical(knitr:::pandoc_to(), 'html')}
+knitr::include_graphics('img/ccbysa_test.png', dpi = NA)
 ```
