@@ -38,6 +38,7 @@ link-citations: yes
 description: "A book about something"    # leaving this blank will actually screw things up in the same way as the url issue; even commenting will
 cover-image: img/nineteeneightyR.png
 url: 'https\://m-clark.github.io/'  # evidently the \: is required or you'll get text in the title/toc area
+favicon: 'img/R.ico'
 github-repo:  m-clark/
 ---
 
@@ -52,7 +53,7 @@ library(magrittr); library(tidyverse); library(stringr); library(pander); librar
 ```
 
 
-#
+# 
 
 ```{r rimg, fig.align='center',  out.width=300, echo=FALSE, include=identical(knitr:::pandoc_to(), 'html')}
 knitr::include_graphics('img/198R.png', dpi = NA)
