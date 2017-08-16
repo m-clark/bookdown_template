@@ -19,4 +19,9 @@ Note the following color coding used in this document:
 
 
 
+```{r}
+# example code for tweaking
+x = rnorm(10)
+x
+```
 
