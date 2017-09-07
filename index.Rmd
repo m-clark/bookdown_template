@@ -43,13 +43,13 @@ github-repo:  m-clark/
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE, message=F, warning=F, error=F, comment=NA, R.options=list(width=220),   # code 
-                      dev.args=list(bg = 'transparent'), dev='svg', fig.align='center',     # viz
-                      cache.rebuild=T, cache=T)                                                 # cache
+knitr::opts_chunk$set(echo = T, message=F, warning=F, error=F, comment=NA, R.options=list(width=220),   # code 
+                      dev.args=list(bg = 'transparent'), dev='svg', fig.align='center',                 # viz
+                      cache.rebuild=F, cache=T)                                                         # cache
 ```
 
 ```{r packages, include=FALSE, cache=FALSE}
-library(magrittr); library(tidyverse); library(stringr); library(pander); library(plotly); library(lazerhawk)
+# library(magrittr); library(tidyverse); library(stringr); library(pander); library(plotly); library(lazerhawk)
 ```
 
 
