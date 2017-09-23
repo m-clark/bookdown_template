@@ -15,19 +15,22 @@ output:
     highlight: pygments
     number_sections: false
     # split_by: section
-    toc_depth: 3
     config:
+      toc:
+        depth: 2
+        collapse: section
+        scroll_highlight: yes
       edit : null
       download: null
       search: yes
       sharing:
-        facebook: yes
-        twitter: yes
+        facebook: no
+        twitter: no
         google: no
         weibo: no
         instapper: no
         vk: no
-        all: ['facebook', 'google', 'twitter', 'weibo', 'instapaper']
+        all: ['twitter', 'facebook', 'google', 'weibo', 'instapaper']
 always_allow_html: yes
 # font-import: https://fonts.googleapis.com/css?family=Roboto|Open+Sans
 # font-family: 'Roboto'
