@@ -24,17 +24,24 @@
 }
 
 
+/* link effects */
 .book .book-body .page-wrapper .page-inner section.normal a {
-    color: #3D68FF;  /*1B4D9E #4183c4; changed for contrast and complement*/
+    color: #3D68FF;
+    background-image: linear-gradient(180deg,transparent 90%, #FFD43D 0);
+    background-size: 0 100%;
+    background-repeat: no-repeat;
     text-decoration: none;
-    background: 0 0;
+    -webkit-transition: background-size .4s ease;
+    -moz-transition: background-size .4s ease;
+    -ms-transition: background-size .4s ease;
+    -o-transition: background-size .4s ease;
+    transition: background-size .4s ease;
+    border-bottom: 0px solid;
 }
-
 .book .book-body .page-wrapper .page-inner section.normal a:hover {
-    color: #3D68FF;  /*1B4D9E #4183c4; changed for contrast and complement*/
-    text-decoration: none;
-    text-shadow: 0 0 1px #3D68FF;
-    background: 0 0;
+  text-decoration: none;
+    background-size: 100% 100%;
+    cursor: pointer;
 }
 
 .body-inner {
@@ -55,7 +62,7 @@
 
 .book .book-header {
     overflow: visible;
-    height: 50px;
+    height: 48px;    /* adjust to match title space*/
     padding: 0 8px;
     z-index: 2;
     font-family: Roboto sans-serif;
@@ -65,12 +72,18 @@
     /* background: 0 0; */
 }
 
-element .style {
+/* only way to set bgcolor of top bar?*/
+.book-body.fixed {
   background-color: #fffff8;
 }
 
 .book.with-summary .book-header.fixed {
   background-color: #fffff8;
+  /*font-family: Stalemate Roboto Sans; ignored as all it is doing is taking from index title*/
+  border-bottom: 0 solid rgba(0,0,0,.07);  /*just remove it; this makes height in .book-header above moot*/
+  border-bottom-width: 0;
+  border-bottom-style: solid;
+  border-bottom-color: rgba(0, 0, 0, 0.07);
 }
 
 i {
@@ -112,6 +125,27 @@ i {
   color: #990024;  /*#6197D5*/
 }
 
+/* so that before and after aren't treated the same as the toc, because why would they? */
+.book .book-summary ul.summary li.before a {
+  color: #990024;
+  text-decoration: none;
+  font-size: 125%;
+  font-variant: small-caps;
+  font-family: 'Helvetica Neue', 'Open Sans', Roboto, sans-serif;
+  font-weight: 800;
+}
+
+
+.book .book-summary ul.summary li.before a:hover,
+.book .book-summary ul.summary li.before li.active>a {
+  color: #fffff8;  /*#6197D5*/
+  background-color: #990024;
+  text-decoration: none;
+}
+
+.book .book-summary ul.summary li.after a, .book .book-summary ul.summary li.after a:hover {
+  background-color: transparent;
+}
 
 .book .book-body .page-wrapper .page-inner section.normal pre {
     overflow: auto;
@@ -132,9 +166,9 @@ i {
 .book .book-body .page-wrapper .page-inner section.normal .note {
   background-color: #fafafa;
   /*background-image: url('../img/R.ico');*/
-  font-size: 80% ;  
+  font-size: 80% ;
   margin: auto;
-  font-weight: 500;  
+  font-weight: 500;
   max-width: 75%;
   border-width: 10px;
   border-color: #bfbfbf;
@@ -146,4 +180,8 @@ i {
 .img-note {
   vertical-align: central;
   width: 2em;
+}
+
+.footnotes {
+  color: #00000080;
 }
