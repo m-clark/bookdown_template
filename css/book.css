@@ -130,7 +130,8 @@ i {
 
 
 .book .book-summary ul.summary li a:hover, .book .book-summary ul.summary li.active>a {
-  color: #990024;  /*#6197D5*/
+  color: #fffff8;  /*#6197D5*/
+  background-color: #990024;
 }
 
 /* so that before and after aren't treated the same as the toc, because why would they? */
