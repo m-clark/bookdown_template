@@ -23,6 +23,13 @@
     -moz-text-size-adjust: 100%;
 }
 
+.book .book-body {
+    background: #fffff8;
+    -webkit-transition: left 250ms ease;
+    -moz-transition: left 250ms ease;
+    -o-transition: left 250ms ease;
+    transition: left 250ms ease;
+}
 
 /* link effects */
 .book .book-body .page-wrapper .page-inner section.normal a {
@@ -77,6 +84,7 @@
   background-color: #fffff8;
 }
 
+/* Rather than resize the header, just get rid of line */
 .book.with-summary .book-header.fixed {
   background-color: #fffff8;
   /*font-family: Stalemate Roboto Sans; ignored as all it is doing is taking from index title*/
