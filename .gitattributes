@@ -22,6 +22,7 @@
 
 # produced vignettes
 _book/*.html
+_docs/*.html
 _book/*.pdf
 
 # OAuth2 token, see https://github.com/hadley/httr/releases/tag/v0.3

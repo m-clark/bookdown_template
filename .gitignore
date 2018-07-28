@@ -4,4 +4,6 @@
 .Ruserdata
 *_book
 *_cache
+*.spyproject
 *.DS_Store
+*checkpoints
