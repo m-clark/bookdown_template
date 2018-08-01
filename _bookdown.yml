@@ -1,18 +1,17 @@
-book_filename: "data-processing-and-visualization"
+book_filename: 'title'
 language:
   ui:
-    chapter_name: "Chapter "
-output_dir: "docs"
+    chapter_name: 'Chapter '
+output_dir: 'docs'
 delete_merged_file: true
 
 rmd_files: [
-  "index.Rmd",
-
-  "intro.Rmd",
+  'index.Rmd',
+  'intro.Rmd',
 
   # Part I
-  # 'blah.Rmd',
-  # 'blah.Rmd',
+  #'blah.Rmd',
+  #'blah.Rmd',
 
 
   # Part II
@@ -24,6 +23,6 @@ rmd_files: [
   #'blah.Rmd',
 
   # Other
-  # 'summary.Rmd',
+  #'summary.Rmd',
   'references.Rmd'
 ]

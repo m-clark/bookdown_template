@@ -1,5 +1,5 @@
 [
-["index.html", "Title", " Title Michael Clark https://m-clark.github.io/data-processing-and-visualization/ 2018-07-28 "],
-["intro.html", "Introduction Overview", " Introduction Overview Goals Prerequisites Note the following color coding used in this document: emphasis package function object/class link # example code for tweaking x = rnorm(10) x [1] -0.35533563 0.13849182 -0.71038750 1.25713427 0.81971112 1.36098844 -0.04486474 -0.41830132 0.83564387 -0.26582103 "],
+["index.html", "Title", " Title Michael Clark https://m-clark.github.io/TITLE/ 2018-07-29 "],
+["intro.html", "Introduction Overview", " Introduction Overview Goals Prerequisites Note the following color coding used in this document: emphasis package function object/class link # example code for tweaking x = rnorm(10) x [1] 0.08989017 -1.01258786 0.11734588 -0.08096318 -1.28170018 0.62473130 -2.33893737 0.73339249 -0.83631919 0.05944106 "],
 ["references.html", "References", " References "]
 ]
