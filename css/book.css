@@ -9,6 +9,8 @@
 }
 
 .book .book-body .page-wrapper .page-inner section.normal .author .noem {
+  display: block;
+  margin: 0 0 10px 0;
   font-size:  125%;
   font-style:  normal;
   font-variant:  small-caps;
@@ -18,6 +20,8 @@
 
 
 .book .book-body .page-wrapper .page-inner section.normal a.uri {
+  display: block;
+  margin: 0 0 10px 0;
   font-size:  75%;
   font-style:  normal;       /* ignored thanks to bootstrap random enforcement of em*/
   font-variant:  small-caps;
@@ -289,6 +293,20 @@ code span.st {
 img {
   display: block;
   margin: 0 auto;
+}
+
+.arc {
+  display: block;
+  width:30%;
+  padding:5px 0;
+  margin: 0 0 10px 0;
+}
+
+.cscar {
+  display: block;
+  width:21%;
+  padding:5px 0;
+  margin: 0 0 10px 0;
 }
 
 /* zoom for img*/
