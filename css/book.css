@@ -256,6 +256,28 @@ h1, h2, h3, h4, h5 {
 }
 
 
+
+/* marginnotes */
+.book .book-body .page-wrapper .page-inner section.normal .marginnote span.mjx-chtml, span.mjx-block {
+    display: block;
+    font-size: 80%;
+}
+
+.book .book-body .page-wrapper .page-inner section.normal .marginnote {
+  float: right;
+  clear: right;
+  margin-right: -45%;
+  width: 40%;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 75%;
+  line-height: 1;
+  vertical-align: baseline;
+  position: relative;
+}
+
+
+
 /* code */
 
 /* logical NA */
