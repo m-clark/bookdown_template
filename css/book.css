@@ -18,6 +18,17 @@
   font-family: 'Roboto Condensed', 'Fira Sans', Roboto, 'Open Sans', sans;
 }
 
+.book .book-body .page-wrapper .page-inner section.normal .author a {
+  display: block;
+  margin: 0 0 10px 0;
+  font-size:  100%;
+  font-style:  normal;
+  /*font-variant:  small-caps;  so that can displayed as input*/
+  font-weight: 200;
+  font-family: 'Roboto Condensed', 'Fira Sans', Roboto, 'Open Sans', sans;
+}
+
+
 
 .book .book-body .page-wrapper .page-inner section.normal a.uri {
   display: block;
